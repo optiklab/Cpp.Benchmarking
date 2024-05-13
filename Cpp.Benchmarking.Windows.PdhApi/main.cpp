@@ -13,7 +13,7 @@ void DumpMap(std::map<std::tstring, double> const& m)
     std::map<std::tstring, double>::const_iterator itr = m.begin();
     while (m.end() != itr)
     {
-        if (itr->second > 0)
+        if (itr->second > 0) // Remove this condition if you want to see all Processes including those taking 0 CPU time
         {
             tcout << itr->first << " " << itr->second << std::endl;
         }
